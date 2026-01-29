@@ -21,6 +21,8 @@ class Employee:
         print(f"Name: {self._name}, Salary: {self._salary}")
     def displayCount(self):
         print(f"Total Employee: {Employee._empCount}")
+    def foo(self) -> None:
+        print("Example of Inheritance")
 
 def main() -> None:
     emp1 = Employee("Zara", 2000)

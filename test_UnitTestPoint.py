@@ -11,6 +11,7 @@ class TestPoint(unittest.TestCase):
         p = Point(3.0, 4.0)
         self.assertEqual(str(p), "(3.0, 4.0)")
     def test_Point_Update(self) -> None:
+        # test_Point_Move
         p = Point()
         p.move(3.0, 4.0)
         self.assertEqual(str(p), "(3.0, 4.0)")

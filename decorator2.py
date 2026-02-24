@@ -1,16 +1,17 @@
-def decorator(func):
+def decorator(func, words):
     def wrapper():
         print("Before function call inside the decorator")
-        func()
+        func(words)
         print("After function call inside the decorator")
     return wrapper
 
-def say_whee():
-    print("Whee!")
+def say_words(words):
+    print(words)
 
 
 print("====== before decoration ======")
-say_whee()
+say_words("Hello")
+say_words("Whee!")
 print("====== after decoration =======")
-say_whee = decorator(say_whee)
-say_whee()
+say_words = decorator(say_words, "Whee!")
+say_words()
